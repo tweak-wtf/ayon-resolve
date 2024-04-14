@@ -1,11 +1,11 @@
 import os
 
-from openpype.modules import OpenPypeModule, IHostAddon
+from ayon_core.addon import AYONAddon, IHostAddon
 
-from .utils import RESOLVE_ROOT_DIR
+RESOLVE_ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
-class ResolveAddon(OpenPypeModule, IHostAddon):
+class ResolveAddon(AYONAddon, IHostAddon):
     name = "resolve"
     host_name = "resolve"
 

@@ -4,9 +4,8 @@ import uuid
 import qargparse
 from qtpy import QtWidgets, QtCore
 
-from openpype.settings import get_current_project_settings
-from openpype.pipeline.context_tools import get_current_project_asset
-from openpype.pipeline import (
+from ayon_core.settings import get_current_project_settings
+from ayon_core.pipeline import (
     LegacyCreator,
     LoaderPlugin,
 )

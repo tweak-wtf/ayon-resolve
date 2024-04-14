@@ -1,16 +1,16 @@
 import os
 import sys
 
-from openpype.pipeline import install_host
-from openpype.lib import Logger
+from ayon_core.pipeline import install_host
+from ayon_core.lib import Logger
 
 log = Logger.get_logger(__name__)
 
 
 def main(env):
-    import openpype.hosts.resolve.api as bmdvr
+    import ayon_resolve.api as bmdvr
 
-    # activate resolve from openpype
+    # activate resolve from ayon_core
     install_host(bmdvr)
 
     bmdvr.launch_pype_menu()

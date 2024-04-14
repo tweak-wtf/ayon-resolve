@@ -1,5 +1,5 @@
 import os
-from openpype.lib.applications import PreLaunchHook, LaunchTypes
+from ayon_applications import PreLaunchHook
 
 
 class PreLaunchResolveLastWorkfile(PreLaunchHook):
@@ -10,7 +10,6 @@ class PreLaunchResolveLastWorkfile(PreLaunchHook):
     """
     order = 10
     app_groups = {"resolve"}
-    launch_types = {LaunchTypes.local}
 
     def execute(self):
         if not self.data.get("start_last_workfile"):

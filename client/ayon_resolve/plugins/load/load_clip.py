@@ -1,20 +1,20 @@
 from copy import deepcopy
 
-from openpype.client import (
+from ayon_api import (
     get_version_by_id,
     get_last_version_by_subset_id,
 )
 # from openpype.hosts import resolve
-from openpype.pipeline import (
+from ayon_core.pipeline import (
     get_representation_path,
     get_current_project_name,
 )
-from openpype.hosts.resolve.api import lib, plugin
-from openpype.hosts.resolve.api.pipeline import (
+from ayon_resolve.api import lib, plugin
+from ayon_resolve.api.pipeline import (
     containerise,
     update_container,
 )
-from openpype.lib.transcoding import (
+from ayon_core.lib.transcoding import (
     VIDEO_EXTENSIONS,
     IMAGE_EXTENSIONS
 )

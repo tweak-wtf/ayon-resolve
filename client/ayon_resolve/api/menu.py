@@ -3,7 +3,7 @@ import sys
 
 from qtpy import QtWidgets, QtCore
 
-from openpype.tools.utils import host_tools
+from ayon_core.tools.utils import host_tools
 
 from .pipeline import (
     publish,

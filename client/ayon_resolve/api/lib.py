@@ -5,8 +5,8 @@ import os
 import contextlib
 from opentimelineio import opentime
 
-from openpype.lib import Logger
-from openpype.pipeline.editorial import is_overlapping_otio_ranges
+from ayon_core.lib import Logger
+from ayon_core.pipeline.editorial import is_overlapping_otio_ranges
 
 from ..otio import davinci_export as otio_export
 
